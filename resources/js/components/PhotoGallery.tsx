@@ -70,35 +70,6 @@ export function PhotoGallery({ language, onEventClick }: PhotoGalleryProps) {
         "photographer-asc": "Photographer A-Z"
       }
     },
-    es: {
-      title: "Galería de Fotos Corporativas",
-      subtitle: "Capturando momentos memorables de nuestros eventos corporativos",
-      searchPlaceholder: "Buscar eventos, descripciones, fotógrafos o etiquetas...",  
-      allEvents: "Todos los Eventos",
-      allPhotographers: "Todos los Fotógrafos",
-      sortBy: "Ordenar por",
-      showFilters: "Mostrar Filtros",
-      hideFilters: "Ocultar Filtros",
-      clearSearch: "Limpiar búsqueda",
-      clearAllFilters: "Limpiar todos los filtros",
-      resultsCount: "resultado(s)",
-      noResults: "No se encontraron eventos que coincidan con sus criterios",
-      filters: {
-        all: "Todos los Eventos",
-        meeting: "Reuniones",
-        celebration: "Celebraciones",
-        training: "Capacitación",
-        networking: "Networking",
-        awards: "Premios"
-      },
-      sorting: {
-        "date-desc": "Más Nuevo Primero",
-        "date-asc": "Más Antiguo Primero",
-        "name-asc": "Nombre A-Z",
-        "name-desc": "Nombre Z-A",
-        "photographer-asc": "Fotógrafo A-Z"
-      }
-    },
     zh: {
       title: "企業照片庫",
       subtitle: "記錄我們企業活動的難忘時刻",

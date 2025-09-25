@@ -15,10 +15,6 @@ export function Header({ language, onLanguageChange, onBackClick, showBackButton
       title: "Corporate Portal",
       language: "Language"
     },
-    es: {
-      title: "Portal Corporativo", 
-      language: "Idioma"
-    },
     zh: {
       title: "企業入口網站",
       language: "語言"
@@ -51,7 +47,6 @@ export function Header({ language, onLanguageChange, onBackClick, showBackButton
             </SelectTrigger>
             <SelectContent>
               <SelectItem value="en">EN</SelectItem>
-              <SelectItem value="es">ES</SelectItem>
               <SelectItem value="zh">中文</SelectItem>
             </SelectContent>
           </Select>

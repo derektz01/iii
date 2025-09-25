@@ -52,19 +52,6 @@ export function PhotoGalleryDetails({ event, language, onBack }: PhotoGalleryDet
       photoViewerTitle: "Photo Viewer",
       photoViewerDescription: "Navigate through event photos using arrow keys or navigation buttons"
     },
-    es: {
-      photographer: "Fotógrafo",
-      date: "Fecha",
-      photos: "fotos",
-      searchPhotos: "Buscar fotos en este evento...",
-      clearSearch: "Limpiar búsqueda",
-      closeViewer: "Cerrar Visor",
-      previous: "Anterior",
-      next: "Siguiente",
-      fullscreen: "Ver Pantalla Completa",
-      photoViewerTitle: "Visor de Fotos",
-      photoViewerDescription: "Navega por las fotos del evento usando las teclas de flecha o los botones de navegación"
-    },
     zh: {
       photographer: "攝影師",
       date: "日期",

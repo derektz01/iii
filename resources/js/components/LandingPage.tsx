@@ -36,23 +36,6 @@ export function LandingPage({ language, onSectionClick }: LandingPageProps) {
         gallery: "Photo Gallery"
       }
     },
-    es: {
-      welcome: "Bienvenido al Portal Corporativo",
-      subtitle: "Accede a todos tus recursos corporativos en un solo lugar",
-      sections: {
-        policies: "Políticas y Regulaciones",
-        notices: "Avisos",
-        presses: "Comunicados de Prensa", 
-        publications: "Publicaciones",
-        benefits: "Beneficios para Empleados",
-        forms: "Formularios e Informes",
-        jobs: "Vacantes de Trabajo",
-        media: "Archivos Multimedia",
-        risk: "Evaluaciones de Riesgo de Rutas",
-        safety: "Consejos de Seguridad",
-        gallery: "Galería de Fotos"
-      }
-    },
     zh: {
       welcome: "歡迎使用企業入口網站",
       subtitle: "在一個地方訪問所有企業資源",

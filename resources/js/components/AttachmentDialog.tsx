@@ -18,12 +18,6 @@ export function AttachmentDialog({ isOpen, onClose, attachments, language }: Att
       download: "Download",
       close: "Close"
     },
-    es: {
-      selectAttachment: "Seleccionar Adjunto",
-      selectAttachmentDescription: "Elige entre los adjuntos disponibles para descargar",
-      download: "Descargar",
-      close: "Cerrar"
-    },
     zh: {
       selectAttachment: "選擇附件",
       selectAttachmentDescription: "從可用的附件中選擇要下載的文件",

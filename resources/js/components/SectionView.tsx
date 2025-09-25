@@ -70,56 +70,6 @@ export function SectionView({ section, language, onBack, onPolicyDetailsClick, o
         apply: "Apply Now"
       }
     },
-    es: {
-      back: "Volver al Inicio",
-      sections: {
-        policies: "Políticas y Regulaciones",
-        notices: "Avisos",
-        presses: "Comunicados de Prensa",
-        publications: "Publicaciones", 
-        benefits: "Beneficios para Empleados",
-        forms: "Formularios e Informes",
-        jobs: "Vacantes de Trabajo",
-        media: "Archivos Multimedia",
-        risk: "Evaluaciones de Riesgo de Rutas",
-        safety: "Consejos de Seguridad"
-      },
-      labels: {
-        date: "Fecha",
-        category: "Categoría",
-        priority: "Prioridad",
-        department: "Departamento",
-        location: "Ubicación",
-        type: "Tipo",
-        posted: "Publicado",
-        route: "Ruta",
-        riskLevel: "Nivel de Riesgo",
-        status: "Estado",
-        lastUpdate: "Última Actualización",
-        eligibility: "Elegibilidad",
-        format: "Formato",
-        size: "Tamaño",
-        duration: "Duración",
-        pages: "Páginas",
-        slides: "Diapositivas",
-        count: "Cantidad",
-        referenceCode: "Código de Referencia",
-        serialNumber: "Número de Serie",
-        issuer: "Emisor",
-        search: "Buscar elementos...",
-        filterByIssuer: "Filtrar por emisor",
-        filterByCategory: "Filtrar por categoría",
-        allIssuers: "Todos los Emisores",
-        allCategories: "Todas las Categorías",
-        attachment: "Adjunto",
-        attachments: "Adjuntos"
-      },
-      actions: {
-        view: "Ver Detalles",
-        download: "Descargar",
-        apply: "Aplicar Ahora"
-      }
-    },
     zh: {
       back: "返回主頁",
       sections: {
