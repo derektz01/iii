@@ -25,14 +25,14 @@ export function LandingPage({ language, onSectionClick }: LandingPageProps) {
       sections: {
         policies: "Policies & Regulations",
         notices: "Notices",
-        presses: "Press Releases",
+        press: "Press Releases",
         publications: "Publications", 
         benefits: "Employee Benefits",
         forms: "Forms & Reports",
         jobs: "Job Vacancies",
-        media: "Media Files",
-        risk: "Route Risk Assessments",
-        safety: "Safety Tips",
+        "handbooks-videos": "Handbooks and Videos",
+        "risk-assessments": "Route Risk Assessments",
+        "safety-tips": "Safety Tips",
         gallery: "Photo Gallery"
       }
     },
@@ -42,14 +42,14 @@ export function LandingPage({ language, onSectionClick }: LandingPageProps) {
       sections: {
         policies: "政策與法規",
         notices: "通知公告",
-        presses: "新聞發布",
+        press: "新聞發布",
         publications: "出版物",
         benefits: "員工福利",
         forms: "表格與報告",
         jobs: "職位空缺",
-        media: "媒體檔案",
-        risk: "路線風險評估",
-        safety: "安全提示",
+        "handbooks-videos": "手冊和影片",
+        "risk-assessments": "路線風險評估",
+        "safety-tips": "安全提示",
         gallery: "照片庫"
       }
     }
@@ -60,14 +60,14 @@ export function LandingPage({ language, onSectionClick }: LandingPageProps) {
   const sections = [
     { key: 'policies', icon: FileText, color: 'text-blue-600' },
     { key: 'notices', icon: Bell, color: 'text-yellow-600' },
-    { key: 'presses', icon: Newspaper, color: 'text-green-600' },
+    { key: 'press', icon: Newspaper, color: 'text-green-600' },
     { key: 'publications', icon: BookOpen, color: 'text-purple-600' },
     { key: 'benefits', icon: Heart, color: 'text-red-600' },
     { key: 'forms', icon: ClipboardList, color: 'text-indigo-600' },
     { key: 'jobs', icon: Briefcase, color: 'text-orange-600' },
-    { key: 'media', icon: FolderOpen, color: 'text-teal-600' },
-    { key: 'risk', icon: Shield, color: 'text-cyan-600' },
-    { key: 'safety', icon: AlertTriangle, color: 'text-amber-600' },
+    { key: 'handbooks-videos', icon: FolderOpen, color: 'text-teal-600' },
+    { key: 'risk-assessments', icon: Shield, color: 'text-cyan-600' },
+    { key: 'safety-tips', icon: AlertTriangle, color: 'text-amber-600' },
     { key: 'gallery', icon: Camera, color: 'text-pink-600' }
   ];
 

@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from "react";
 import { Maximize2 } from "lucide-react";
-import { ImageWithFallback } from "./figma/ImageWithFallback";
+import { ImageWithFallback } from "../figma/ImageWithFallback";
 
 interface Photo {
   id: number;

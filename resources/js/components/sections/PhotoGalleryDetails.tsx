@@ -1,9 +1,9 @@
 import { useState, useEffect, Suspense, lazy, useMemo } from "react";
-import { Dialog, DialogContent, DialogTitle, DialogDescription } from "./ui/dialog";
-import { Button } from "./ui/button";
-import { Input } from "./ui/input";
+import { Dialog, DialogContent, DialogTitle, DialogDescription } from "../ui/dialog";
+import { Button } from "../ui/button";
+import { Input } from "../ui/input";
 import { Calendar, Camera, User, X, ChevronLeft, ChevronRight, Maximize2, Search } from "lucide-react";
-import { ImageWithFallback } from "./figma/ImageWithFallback";
+import { ImageWithFallback } from "../figma/ImageWithFallback";
 import { PhotoGridSkeleton } from "./PhotoGridSkeleton";
 
 // Lazy load the photo grid item component for better performance
@@ -51,6 +51,19 @@ export function PhotoGalleryDetails({ event, language, onBack }: PhotoGalleryDet
       fullscreen: "View Fullscreen",
       photoViewerTitle: "Photo Viewer",
       photoViewerDescription: "Navigate through event photos using arrow keys or navigation buttons"
+    },
+    es: {
+      photographer: "Fotógrafo",
+      date: "Fecha",
+      photos: "fotos",
+      searchPhotos: "Buscar fotos en este evento...",
+      clearSearch: "Limpiar búsqueda",
+      closeViewer: "Cerrar Visor",
+      previous: "Anterior",
+      next: "Siguiente",
+      fullscreen: "Ver Pantalla Completa",
+      photoViewerTitle: "Visor de Fotos",
+      photoViewerDescription: "Navega por las fotos del evento usando las teclas de flecha o los botones de navegación"
     },
     zh: {
       photographer: "攝影師",

@@ -1,11 +1,11 @@
 import { useState, useMemo, useCallback, useEffect } from "react";
-import { Card, CardContent } from "./ui/card";
-import { Badge } from "./ui/badge";
-import { Button } from "./ui/button";
-import { Input } from "./ui/input";
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "./ui/select";
+import { Card, CardContent } from "../ui/card";
+import { Badge } from "../ui/badge";
+import { Button } from "../ui/button";
+import { Input } from "../ui/input";
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "../ui/select";
 import { Camera, Search, X, Filter, Calendar, User } from "lucide-react";
-import { ImageWithFallback } from "./figma/ImageWithFallback";
+import { ImageWithFallback } from "../figma/ImageWithFallback";
 
 interface PhotoGalleryProps {
   language: string;
@@ -73,22 +73,22 @@ export function PhotoGallery({ language, onEventClick }: PhotoGalleryProps) {
     zh: {
       title: "企業照片庫",
       subtitle: "記錄我們企業活動的難忘時刻",
-      searchPlaceholder: "搜索活動、描述、攝影師或標籤...",
+      searchPlaceholder: "搜尋活動、描述、攝影師或標籤...",
       allEvents: "所有活動",
       allPhotographers: "所有攝影師",
       sortBy: "排序方式",
       showFilters: "顯示篩選器",
       hideFilters: "隱藏篩選器",
-      clearSearch: "清除搜索",
+      clearSearch: "清除搜尋",
       clearAllFilters: "清除所有篩選器",
       resultsCount: "個結果",
       noResults: "未找到符合您條件的活動",
       filters: {
         all: "所有活動",
         meeting: "會議",
-        celebration: "慶祝",
+        celebration: "慶祝活動",
         training: "培訓",
-        networking: "網絡",
+        networking: "交流活動",
         awards: "獎項"
       },
       sorting: {
@@ -108,12 +108,12 @@ export function PhotoGallery({ language, onEventClick }: PhotoGalleryProps) {
     // Annual Company Meeting 2024 - 25 photos
     ...Array.from({ length: 25 }, (_, i) => ({
       id: i + 1,
-      title: language === 'es' ? `Reunión Anual de la Empresa 2024 - Foto ${i + 1}` : language === 'zh' ? `2024年度公司會議 - 照片 ${i + 1}` : `Annual Company Meeting 2024 - Photo ${i + 1}`,
-      description: language === 'es' ? `Sesión de planificación estratégica con el equipo directivo - momento ${i + 1}` : language === 'zh' ? `與領導團隊的戰略規劃會議 - 時刻 ${i + 1}` : `Strategic planning session with leadership team - moment ${i + 1}`,
+      title: language === 'zh' ? `2024年度公司會議 - 照片 ${i + 1}` : `Annual Company Meeting 2024 - Photo ${i + 1}`,
+      description: language === 'zh' ? `與領導團隊的戰略規劃會議 - 時刻 ${i + 1}` : `Strategic planning session with leadership team - moment ${i + 1}`,
       date: "2024-11-15",
-      event: language === 'es' ? "Reunión Anual de la Empresa 2024" : language === 'zh' ? "2024年度公司會議" : "Annual Company Meeting 2024",
-      photographer: language === 'es' ? "Comunicaciones Corporativas" : language === 'zh' ? "企業傳播部" : "Corporate Communications",
-      tags: language === 'es' ? ["reunión", "liderazgo", "estrategia"] : language === 'zh' ? ["會議", "領導", "策略"] : ["meeting", "leadership", "strategy"],
+      event: language === 'zh' ? "2024年度公司會議" : "Annual Company Meeting 2024",
+      photographer: language === 'zh' ? "企業傳播部" : "Corporate Communications",
+      tags: language === 'zh' ? ["會議", "領導", "策略"] : ["meeting", "leadership", "strategy"],
       imageUrl: "https://images.unsplash.com/photo-1758518729685-f88df7890776?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjb3Jwb3JhdGUlMjB0ZWFtJTIwbWVldGluZyUyMG9mZmljZXxlbnwxfHx8fDE3NTg2ODkzMTZ8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
     })),
 
@@ -607,7 +607,7 @@ export function PhotoGallery({ language, onEventClick }: PhotoGalleryProps) {
                       </div>
                     )}
                   </div>
-  
+
                   {/* Event Info */}
                   <div className="p-4">
                     <div className="flex items-center justify-between mb-2">
@@ -624,7 +624,7 @@ export function PhotoGallery({ language, onEventClick }: PhotoGalleryProps) {
                     <p className="text-sm text-gray-600 line-clamp-2 mb-3">
                       {mainPhoto.description}
                     </p>
-  
+
                     {/* Additional Photos Preview */}
                     {additionalPhotos.length > 0 && (
                       <div className="flex gap-1">
